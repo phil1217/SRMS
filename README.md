@@ -1,5 +1,5 @@
 ## User Page ##
-![user page](http://via.placeholder.com/200x150)
+![user page](user page.jpg)
 
 ## Administrator Page ##
 ## Faculty Page ##
