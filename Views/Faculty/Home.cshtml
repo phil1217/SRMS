@@ -1,0 +1,306 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Faculty - Home";
+}
+
+<div class="container-fluid p-2 justify-content-center">
+
+<div class="p-1"></div>
+
+    <div class="text-uppercase border-bottom p-1 fs-5"><strong>Faculty</strong></div>
+
+<div class="p-1"></div>
+
+    <div class="d-block p-0 bg-white shadow-sm">
+
+        <div class="p-0 flex-grow-1">
+
+
+            <div class="border-bottom p-2 fw-bold m-0 align-items-center bg-white">
+                    <div class="d-flex align-items-center p-0 m-0">
+                        <div class="p-1"></div>
+                        <span class="text-uppercase lh-lg">Profile Details</span>
+                    </div>
+                </div>
+
+                <div class="d-flex p-2 justify-content-start">
+                    <div class="d-block">
+                        <div><strong>Name : </strong><span id="name" class="text-capitalize"></span></div>
+                        <div><strong>Gender : </strong><span id="gender" class="text-capitalize"></span></div>
+                        <div><strong>Birth Date : </strong><span id="birthDate" class="text-capitalize"></span></div>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    <div class="p-1"></div>
+
+    <div class="d-block p-0 bg-white shadow-sm">
+
+        <div class="p-0 flex-grow-1">
+
+
+            <div class="p-2 fw-bold m-0 align-items-center border-bottom">
+                <div class="d-flex align-items-center p-0 m-0">
+                    <div class="p-1"></div>
+                    <span class="text-uppercase lh-lg">Add Record</span>
+                </div>
+            </div>
+
+                <form id="Add" method="post">
+
+                <div class="d-flex flex-wrap justify-content-start">
+
+                    <fieldset class="border-gray p-3 m-1">
+                        <legend class="text-capitalize lh-1">Identity</legend>
+                        <div class="width-18r">
+                            <div class="p-1 m-0">
+
+                                <div class="d-block p-1">
+                                    <label for="StudentId">Student ID</label>
+                                    <input type="number" name="StudentId" id="studentId" class="d-block w-100 p-2 border-1" placeholder="123456789" required />
+                                </div>
+                                <div class="d-block p-1">
+                                    <label for="Name">Name</label>
+                                    <input type="text" name="Name" id="studentName" class="d-block w-100 p-2 border-1" required disabled/>
+                                </div>
+
+                            </div>
+
+                            <input type="hidden" name="FacultyId" />
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="border-gray p-3 m-1">
+                        <legend class="text-capitalize lh-1">Record</legend>
+                        <div class="width-18r">
+                    <div class="p-1 m-0">
+
+                        <div class="d-flex p-1 align-items-center justify-content-center row">
+                            
+                            <label for="Course" class="col">Course</label>
+
+                                    <input type="text" name="Course" class="flex-grow-1 border-1 p-2 col-4 mr-r75" placeholder="LCS 101" required />
+                            
+                        </div>
+
+                        <div class="d-block p-1">
+                            <label for="Description">Description</label>
+                                    <textarea type="text" name="Description" class="d-block p-2 border-1 w-100" rows="2" placeholder="Software Engineering" required></textarea>
+                          
+                        </div>
+
+                        <div class="d-flex p-1 align-items-center justify-content-center row">
+                            <label for="Grade" class="col">Grade</label>
+                                    <input type="number" name="Grade" class="flex-grow-1 p-2 border-1 col-4 mr-r75" placeholder="100" required />
+                        </div>
+
+                        <div class="d-flex p-1 align-items-center justify-content-center row">
+                            <label for="Semester" class="col">Semester</label>
+                                    <select name="Semester" class="flex-grow-1 border-1 p-2  col-4 mr-r75">
+                                <option value="1">1st</option>
+                                <option value="2">2nd</option>
+                                <option value="3">3rd</option>
+                            </select>
+                        </div>
+                        <div class="d-flex p-1 align-items-center justify-content-center row">
+                            <label for="Unit" class="col">Unit</label>
+                                    <select name="Unit" class="flex-grow-1 border-1 p-2 col-4 mr-r75">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                                <div class="d-flex p-1 align-items-center justify-content-center row">
+                                    <label for="Remark" class="col">Remark</label>
+                                    <select name="Remark" class="flex-grow-1 border-1 p-2 col-4 mr-r75">
+                                        <option value="PASSED">PASSED</option>
+                                        <option value="FAILED">FAILED</option>
+                                    </select>
+                                </div>
+                    </div>
+
+                    <input type="hidden" name="FacultyId" />
+
+                        </div>
+
+                    </fieldset>
+
+                    <div class="d-flex justify-content-center alig-items-center p-3 m-1">
+
+                        <div class="d-block">
+
+                            <button type="reset" class="d-flex justify-content-center alig-items-center p-1 shadow-sm btn-blue width-18r">
+                                <i class="icon-1r5 m-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
+                                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
+                                    </svg>
+                                </i>
+                            </button>
+
+                            <div class="p-1"></div>
+
+                            <button type="submit" class="d-flex justify-content-center alig-items-center p-1 shadow-sm btn-green width-18r">
+
+                                <i class="icon-1r5 m-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                                    </svg>
+                                </i>
+
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                </form>
+
+        </div>
+
+    </div>
+
+    <div class="p-2"></div>
+
+<div class="d-flex p-1 flex-wrap justify-content-center">
+       
+    <div class="flex-grow-1">
+
+        <div class="d-flex flex-wrap">
+            <div class="d-flex flex-grow-1 align-items-center p-2">
+
+                    <label for="PageSize">Page Size</label>
+
+                    <div class="p-1"></div>
+
+                    <select name="PageSize" id="PageSize" value="5" class="p-1 m-0 border-1">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <div class="d-block">
+                <div class="card shadow-sm">
+                <div class="d-flex justify-content-center align-items-center bg-white p-1">
+                    <input type="hidden" id="Query"/>
+                    <input type="text" id="q" class="h-100 border-1 width-15r border-gray p-1" />
+
+                    <a id="search" class="text-black p-2 hover-round-bg-gray">
+                                    <i class="icon-1r">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                        </i>
+                    </a>
+
+                </div>
+                </div>
+
+                <div class="p-1"></div>
+                </div>
+        </div>
+
+            <div class="card p-0 shadow-sm bg-color-secondary">
+                <div class="card-header text-uppercase fw-bold bg-gray p-1 m-0">
+                    <div class="d-flex align-items-center">
+                    <div class="p-2"></div>
+                    <span class="flex-grow-1">Student Record</span>
+
+                        <a id="Refresh" class="hover-round-bg-gray-light text-black">
+                            <i class="icon-1r5 m-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z" />
+                                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466" />
+                                </svg>
+                            </i>
+                    </a>
+                    </div>
+                </div>
+            <div class="card-body p-1">
+                <table>
+
+                        <thead class="border-bottom">
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Description</th>
+                                <th>Grade</th>
+                                <th>Semester</th>
+                                <th>Unit</th>
+                                <th>Options</th>
+                                </tr>
+                    </thead>
+
+                    <tbody id="TableBody">
+              
+                    </tbody>
+                </table>
+                    
+
+                </div>
+                <div class="card-footer p-0 m-0">
+                    <div class="d-flex align-items-center m-0 p-0">
+
+                    <div class="p-2"></div>
+
+                    <input type="hidden" id="PageIndex" />
+                    <span id="page"></span>
+
+                    <div class="d-flex m-2">
+                    <a id="prev" class="hover-round-bg-gray p-2">
+                        <i class="icon-1r text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        </svg>
+                        </i>
+                    </a>
+                    <a id="next" class="hover-round-bg-gray p-2">
+                        <i class="icon-1r text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                        </i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+
+    </div>
+
+</div>
+
+</div>
+
+<div id="UpdateView" class="modal bg-black-transparent-50">
+    <div class=" modal-dialog modal-dialog-centered">
+        <div class="modal-content transparent-modal-content">
+    <partial name="_PartialUpdateForm" />
+    </div>
+    </div>
+</div>
+
+<div id="DeleteView" class="modal bg-black-transparent-50">
+    <div class=" modal-dialog modal-dialog-centered">
+        <div class="modal-content transparent-modal-content">
+    <partial name="_PartialWarningDelete" />
+    </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="@Url.Content("/js/FacultyScript.js")"></script>
+}

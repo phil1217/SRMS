@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SRMS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+</head>
+<body class="bg-gray-light">
+    <header class="header">
+        <nav class="border-bottom p-2 bg-white box-shadow">
+            <div class="container-fluid align-items-center">
+                <div class="d-flex p-1 flex-grow-1 align-items-center">
+
+                    <div class="dropdown hover-bg-gray p-1">
+
+                        <a id="menu" class="text-black" data-bs-toggle="dropdown">
+                            <i class="icon-1r5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button" id="SignOut">Sign Out</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="p-1"></div>
+                   <span class="text-uppercase">dmmmsu-sluc student record system</span>
+                   
+                 </div>
+                    
+             </div>
+        </nav>
+    </header>
+
+    <div class="p-4"></div>
+
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="p-5">
+    </div>
+
+    <footer class="footer text-muted bg-white border-top">
+        <div class="container-fluid">
+            &copy; 2024 - SRMS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.cookie.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

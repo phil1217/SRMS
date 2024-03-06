@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Faculty - Sign In";
+}
+
+
+<div class="position-absolute translate-middle top-50 start-50 ">
+
+    <div class="shadow bg-white p-1">
+
+        <div class="d-block p-1">
+            <div class="p-2"></div>
+            <a class="text-decoration-none text-black" href="/user">
+                <div class="position-absolute top-0 start-0 p-1 m-3 hover-round-bg-gray">
+
+                    <i class="icon-1r5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg>
+                    </i>
+
+                </div>
+            </a>
+
+            <div class="d-flex align-items-center justify-content-center p-2"><img class="square-4r8" src="/images/logo.png" /></div>
+            <div class="width-18r text-uppercase m-1 text-center">
+                <span>Faculty - Sign In</span>
+            </div>
+        </div>
+
+        <div class="d-flex p-1 justify-content-center align-items-center">
+            <form id="SignIn" class="width-18r">
+
+                <div class="shadow-sm m-2 border-1 border-gray">
+                    <div class="d-flex p-1">
+                        <div class="flex-grow-1">
+                            <input name="UserName" class="d-block w-100 p-2 border-1 border-gray text-center" placeholder="username" />
+                        </div>
+
+                        <div class=" d-flex align-items-center justify-content-center p-2">
+                            <i class="icon-1r2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5v-1a2 2 0 0 1 .01-.2 4.49 4.49 0 0 1 1.534-3.693Q8.844 9.002 8 9c-5 0-6 3-6 4m7 0a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow-sm m-2 border-1 border-gray">
+                    <div class="d-flex p-1">
+                        <div class="flex-grow-1">
+                            <input type="password" name="Password" class="d-block w-100 p-2 border-1 border-gray text-center" placeholder="password" />
+                        </div>
+
+                        <div class=" d-flex align-items-center justify-content-center p-2">
+                            <i class="icon-1r2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <button type="submit" class="d-flex justify-content-center alig-items-center shadow-sm btn-blue w-100 text-uppercase lh-1 p-3">
+                        <span>Sign In</span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="d-flex border-top justify-content-center">
+            <div class="w-100 p-4 text-center fw-lighter text-wrap">&copy; 2024 - SRMS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></div>
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    <script src="@Url.Content("/js/FacultyAuthentication.js")"></script>
+}

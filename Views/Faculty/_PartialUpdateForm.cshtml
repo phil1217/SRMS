@@ -1,0 +1,125 @@
+﻿
+<div class="d-flex justify-content-center align-items-center">
+    
+    <div class="shadow-sm bg-white">
+
+        <div class="p-2 fw-bold text-center border-bottom">
+            <div class="d-flex align-items-center justify-content-center p-3">
+                <i class="square-4r8 color-blue-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8.5 11.5a.5.5 0 0 1-1 0V7.707L6.354 8.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 7.707z" />
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                    </svg>
+                </i>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <span class="text-uppercase">Update Record</span>
+            </div>
+
+            <div class="p-1"></div>
+        </div>
+
+        <div class="bg-white p-3">
+            <form id="Update" method="post">
+                <div class="d-flex">
+
+                    <div class="p-2">
+                    <fieldset class="width-18r" id="identity">
+                    <legend class="lh-1">Identity</legend>
+
+                            <input type="hidden" name="id" />
+
+                    <div class="d-block p-1">
+
+                        <label for="studentId">Student ID</label>
+                                <input type="number" name="studentId" id="studentId" class="d-block w-100 p-2 border-1" required disabled />
+                    </div>
+
+                    <div class="d-block p-1">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="studentName" class="d-block w-100 p-2 border-1" required disabled/>
+                    </div>
+
+                        </fieldset>
+                    </div>
+
+                    <div class="p-2">
+
+                        <fieldset class="width-18r" id="record">
+                            <legend class="text-capitalize lh-1">Record</legend>
+                                <div class="p-1 m-0">
+
+                                    <div class="d-flex p-1 align-items-center justify-content-center row">
+
+                                        <label for="course" class="col">Course</label>
+
+                                        <input type="text" name="course" class="flex-grow-1 border-1 p-2 col-4 mr-r75" required />
+
+                                    </div>
+
+                                    <div class="d-block p-1">
+                                        <label for="description">Description</label>
+                                        <textarea type="text" name="description" class="d-block p-2 border-1 w-100" rows="2" required></textarea>
+
+                                    </div>
+
+                                    <div class="d-flex p-1 align-items-center justify-content-center row">
+                                        <label for="grade" class="col">Grade</label>
+                                        <input type="number" name="grade" class="flex-grow-1 p-2 border-1 col-4 mr-r75" required />
+                                    </div>
+
+                                    <div class="d-flex p-1 align-items-center justify-content-center row">
+                                        <label for="semester" class="col">Semester</label>
+                                        <select name="semester" class="flex-grow-1 border-1 p-2  col-4 mr-r75">
+                                            <option value="1">1st</option>
+                                            <option value="2">2nd</option>
+                                            <option value="3">3rd</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex p-1 align-items-center justify-content-center row">
+                                        <label for="unit" class="col">Unit</label>
+                                        <select name="unit" class="flex-grow-1 border-1 p-2 col-4 mr-r75">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            <div class="d-flex p-1 align-items-center justify-content-center row">
+                                <label for="Remark" class="col">Remark</label>
+                                <select name="Remark" class="flex-grow-1 border-1 p-2 col-4 mr-r75">
+                                    <option value="PASSED">PASSED</option>
+                                    <option value="FAILED">FAILED</option>
+                                </select>
+                            </div>
+
+                            <input type="hidden" name="FacultyId" />
+
+                        </fieldset>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-center alig-items-center p-2 w-100">
+                    <div class="d-flex w-100">
+                        <button type="button" id="cancel" class="d-flex justify-content-center alig-items-center p-3 shadow-sm btn-green w-100 lh-1 text-uppercase">
+                            cancel
+                        </button>
+
+                        <div class="p-1"></div>
+
+                        <button type="submit" class="d-flex justify-content-center alig-items-center p-3 shadow-sm btn-blue w-100 lh-1 text-uppercase">
+                        update
+                    </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
