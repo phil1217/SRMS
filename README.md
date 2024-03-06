@@ -1,5 +1,5 @@
 ## User Page ##
-![user page](https://github.com/phil1217/SRMS-Images/user page.jpg)
+![user_page](https://github.com/phil1217/SRMS-Images/user-page.jpg)
 
 ## Administrator Page ##
 ## Faculty Page ##
