@@ -14,15 +14,19 @@ Sections:
 * [Change Admin Username or Password](#change-admin-username-or-password)
 
 ## User Page ##
+There are three types of users: student, faculty, and administrator.
 ![user_page](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/user%20page.jpg)
 
 ## Administrator Page ##
+The administrator is responsible for adding academic member accounts and basic information. The added accounts are used to enable academic members to sign in to the system.
 ![admin_page](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/administrator%20page.jpg)
 
 ## Faculty Page ##
+The faculty is responsible for adding student records.
 ![faculty_page](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/faculty%20page.jpg)
 
 ## Student Page ##
+The student is only allowed to see their own records.
 ![student_page](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/student%20page.jpg)
 
 ## Sign In ##
