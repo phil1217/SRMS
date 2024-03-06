@@ -1,4 +1,5 @@
 # Student Record Management System #
+This is a CRUD system using ASP.NET with jQuery and AJAX for requesting data from endpoints. Object-Oriented Programming (OOP) was applied to manipulate the database with Object Relational Mapping (ORM). JSON Web Token (JWT) was used to generate an access token for the authorization header.
 
 Sections:
 * [User Page](#user-page)
