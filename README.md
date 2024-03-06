@@ -1,5 +1,17 @@
 # Student Record Management System #
 
+Sections:
+[User Page](#user-page)
+[Administrator Page](#administrator-page)
+[Faculty Page](#faculty-page)
+[Student Page](#student-page)
+[Sign In](#sign-in)
+[Update](#update)
+[Delete](#delete)
+[Search](#search)
+[Sign Out](#sign-out)
+[Change Admin Username or Password](#change-admin-username-or-password)
+
 ## User Page ##
 ![user_page](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/user%20page.jpg)
 
