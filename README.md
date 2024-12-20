@@ -28,5 +28,3 @@ This is a CRUD system using ASP.NET with jQuery and AJAX for requesting data fro
 ![update_record](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/update%20record.jpg)
 
 ![delete_record](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/delete.jpg)
-
-![search](https://github.com/phil1217/SRMS-Images/blob/6a0c8c17cef3c92a83db2ead1f5c2ff657e4a308/administrator%20search.jpg)
