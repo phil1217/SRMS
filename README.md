@@ -1,10 +1,5 @@
 # Student Record Management System - C# Asp.net core #
 
-## Sections: ##
-* [Administrator Page](#administrator-page)
-* [Faculty Page](#faculty-page)
-* [Student Page](#student-page)
-
 ## Introduction ##
 This is a CRUD system using ASP.NET with jQuery and AJAX for requesting data from endpoints.
 
