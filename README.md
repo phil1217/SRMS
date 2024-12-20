@@ -1,4 +1,4 @@
-# Student Record Management System - C# Asp.net core MVC#
+# Student Record Management System - C# Asp.net MVC#
 
 ## Introduction ##
 This is a CRUD system using ASP.NET with jQuery and AJAX for requesting data from endpoints.
